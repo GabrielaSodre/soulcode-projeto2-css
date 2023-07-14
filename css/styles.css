@@ -135,13 +135,13 @@ h2 {
         flex-direction: column;
     }
     .menu-container {
-        height: 370px;
+        height: 400px;
     }
     .menu-card img {
         width: 50%;
     }
     #nome {
-        font-size: 40px;
+        font-size: 35px;
     }
     .button-menu {
         padding: 15px;
