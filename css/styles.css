@@ -13,7 +13,9 @@ h2 {
 
 /* Menu lateral */
 .menu-container {
-    background-image: linear-gradient(180deg, #b16bf0, #a841a5);
+    background-color: #b16bf0;
+    background-color: #ffffff;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='32' viewBox='0 0 16 32'%3E%3Cg fill='%23c0c0c0' fill-opacity='0.4'%3E%3Cpath fill-rule='evenodd' d='M0 24h4v2H0v-2zm0 4h6v2H0v-2zm0-8h2v2H0v-2zM0 0h4v2H0V0zm0 4h2v2H0V4zm16 20h-6v2h6v-2zm0 4H8v2h8v-2zm0-8h-4v2h4v-2zm0-20h-6v2h6V0zm0 4h-4v2h4V4zm-2 12h2v2h-2v-2zm0-8h2v2h-2V8zM2 8h10v2H2V8zm0 8h10v2H2v-2zm-2-4h14v2H0v-2zm4-8h6v2H4V4zm0 16h6v2H4v-2zM6 0h2v2H6V0zm0 24h2v2H6v-2z'/%3E%3C/g%3E%3C/svg%3E");
     bottom: 0%;
     display: flex;
     flex-direction: column;
@@ -62,6 +64,9 @@ h2 {
     padding: 0;
     margin: 0;
 }
+.button-menu:hover {
+    background-image: linear-gradient(180deg, #b16bf0, #a841a5);
+}
 
 /*Sessão principal*/
 .principal-container {
@@ -75,13 +80,12 @@ h2 {
     margin: 30px;
     gap: 20px;
 }
-#sobre-mim p {
+.junta-paragrafo p{
     margin: 0;
 }
 #dados-sobre-mim {
     margin: 10px;
 }
-
 .linguagens {
     display: flex;
     flex-wrap: nowrap;
@@ -91,7 +95,7 @@ h2 {
     width: 10%;
 }
 .linguagens img:hover {
-    background-color: rgba(255, 255, 255, 0.37);
+    background-image: linear-gradient(180deg, #b16bf0, #a841a5);
     border-radius: 8px;
 }
 
@@ -107,6 +111,7 @@ h2 {
     width: 30%;
     min-width: 200px;
     border-radius: 8%;
+    
 }
 .inspiracoes-card {
     display: flex;
@@ -122,14 +127,22 @@ h2 {
     text-align: center;
     margin: 0.5%;
 }
-.descricao-inspiracoes{
-    font-size: 13px;
-}
 .nome-inspiracoes {
     font-weight: bolder;
 }
+.descricao-inspiracoes{
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif
+}
+.descricao-inspiracoes:hover, 
+.nome-inspiracoes:hover {
+    background-image: linear-gradient(180deg, #b16bf0, #a841a5);
+    border-radius: 8px;
+    color: black
+}
 
-@media(max-width: 414px) {
+/* Responsividade para tablet e celular */
+@media(max-width: 1007px) {
     body{
         display: flex;
         flex-direction: column;
@@ -144,6 +157,9 @@ h2 {
     #nome {
         font-size: 35px;
     }
+    #redes-sociais-btn {
+        display: flex;
+    }
     .button-menu {
         padding: 15px;
         margin: 5px;
@@ -153,12 +169,8 @@ h2 {
     .button-menu p {
         display: none;
     }
-    #redes-sociais-btn {
-        display: flex;
-    }
     .button-menu svg {
         width: 40px;
         height: 40px;
     }
-    
 }
