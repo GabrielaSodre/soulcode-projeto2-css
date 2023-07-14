@@ -136,6 +136,7 @@ h2 {
     }
     .menu-container {
         height: 400px;
+        align-content: space-around;
     }
     .menu-card img {
         width: 50%;
