@@ -44,6 +44,8 @@ h2 {
     width: 90%;
     display: flex;
     justify-content: center;
+    text-decoration: none;
+
 }
 .button-menu {
     background-image: linear-gradient(180deg, #1a1a1a, #0d0d0d);
@@ -54,11 +56,12 @@ h2 {
     flex-direction: column;
     align-items: center;
     color: white;
-    font-size: 10px;
+    font-size: 12px;
     border-radius: 12px;
     width: 100%;
     border: none;
     margin-top: 10px;
+    
 }
 .button-menu p {
     padding: 0;
